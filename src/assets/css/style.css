@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'Roboto Thin';
+  src        : url('./font/Roboto-Thin.ttf');
+}
+
+.avatar-container,
+.start-container,
+.footer-container,
+.new-user.container {
+  text-align  : center;
+  margin-right: auto;
+  margin-left : auto;
+  width       : fit-content;
+}
+
+
+img.avatar {
+  width             : 150px;
+  margin-top        : 100px;
+  -webkit-transition: 0.5s;
+  transition        : 0.5s;
+}
+
+img.avatar.login {
+  width             : 125px;
+  margin-top        : 80px;
+  -webkit-transition: 0.5s;
+  transition        : 0.5s;
+}
+
+.start-text {
+  font-family  : 'Roboto Thin';
+  font-weight  : 100;
+  font-size    : 40px;
+  margin-top   : 165px;
+  margin-bottom: 20px;
+}
+
+.start-text a:hover {
+  text-decoration: none;
+}
+
+.form-container {
+  margin-top  : 50px;
+  text-align  : center;
+  padding     : 20px 25px;
+  max-width   : 400px;
+  min-width   : 320px;
+  margin-right: auto;
+  margin-left : auto;
+}
+
+.mat-form-field-invalid .mat-input-element,
+.mat-warn .mat-input-element {
+  caret-color: #f44336
+}
+
+.mat-input-element {
+  caret-color: #3f51b5
+}
+
+.mat-accent .mat-input-element {
+  caret-color: #ff4081
+}
+
+input:focus {
+  color: black;
+}
+
+.ng-invalid input:focus {
+  border     : 1px solid #ff7878ab !important;
+  border-left: 2px solid #ff7878 !important;
+  background : seashell;
+}
+
+:host ::ng-deep .mat-form-field-placeholder,
+:host ::ng-deep .mat-select-placeholder {
+  color: green !important;
+}
+
+.mat-elevation-z8 {
+  padding: 10px;
+}
+
+.mat-elevation-z8 table {
+  width: 100%;
+}
+
+.mat-row,
+.mat-header-row {
+  background         : #e8e8e8;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #e8e8e8;
+  align-items        : center;
+  vertical-align     : middle;
+}
+
+.mat-header-cell {
+  font-size       : 10pt;
+  font-weight     : 600;
+  background-color: aliceblue;
+}
+
+.mat-cell,
+.mat-header-cell {
+  flex     : 1;
+  overflow : hidden;
+  word-wrap: break-word;
+}
+
+.mat-tool-icon {
+  padding    : 0 14px;
+  margin-left: 10px
+}
+
+.mat-tool-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-tool-icon.button {
+  margin: 0 10px;
+}
+
+.mat-tool-icon.button:hover {
+  cursor: pointer;
+  color : #dfdfdf;
+}
+
+:host ::ng-deep .mat-raised-button.search-button {
+  margin: 0 10px;
+}
+
+input:placeholder,
+[type=password]:placeholder,
+.new-user .not-register,
+.new-user .text {
+  font-family: 'Roboto Thin';
+  font       : weight 100;
+}

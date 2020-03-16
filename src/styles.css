@@ -1,0 +1,63 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@font-face {
+  font-family: 'Roboto Thin';
+  src        : url('./assets/css/font/Roboto-Thin.ttf');
+}
+
+
+html,
+body {
+  height: 100%;
+  font-family: 'Roboto Thin';
+  font-weight  : 100;
+}
+
+body {
+  margin     : 0;
+}
+
+.toast-container .ngx-toastr {
+  top                : 10px;
+  position           : absolute;
+  right              : 10px;
+  overflow           : hidden;
+  margin             : 0 0 5px;
+  padding            : 10px 15px 10px 45px;
+  width              : 300px;
+  border-radius      : 10px;
+  background-position: 15px 15px;
+  background-repeat  : no-repeat;
+  background-size    : 15px;
+  box-shadow         : 0 0 12px 2px #999999;
+  color              : #FFFFFF;
+  font-size          : 13px;
+  z-index            : 9;
+}
+
+.toast-success {
+  background-color: #51a351f2;
+}
+
+.toast-error {
+  background-color: #c1272d;
+}
+
+.toast-info {
+  background-color: #29abe2;
+}
+
+.toast-warning {
+  background-color: #f15a24;
+}
+
+.toast-progress {
+  bottom: -7px !important;
+  height: 2px;
+}
+
+:host ::ng-deep .mat-elevation-z8 {
+  width     : calc(100% - 20px);
+  height    : calc(100% - 90px);
+  box-shadow: 0 0 0 0 !important;
+}
