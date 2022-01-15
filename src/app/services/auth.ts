@@ -45,7 +45,7 @@ export class AuthService {
 
 
     logout() {
-        // remove user from local storage to log user out
+        // to logout
         localStorage.removeItem('currentUser');
     }
 }
